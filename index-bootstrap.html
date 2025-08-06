@@ -18,14 +18,16 @@
             background-color: #ffffff;
             color: #333333;
         }
-        h2 {
-            font-size: 1.75rem;
-            font-weight: 700;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #3b82f6;
-            margin-bottom: 1.5rem;
-        }
+        /* 各セクションのタイトル（中見出し） */
         h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #d1d5db;
+        }
+        /* 各セクション内の小見出し */
+        h4 {
             font-size: 1.25rem;
             font-weight: 700;
             margin-bottom: 1rem;
@@ -35,6 +37,9 @@
         p {
             line-height: 1.8;
             margin-bottom: 1.5rem;
+        }
+        article section {
+            margin-top: 3rem;
         }
     </style>
 </head>
@@ -74,46 +79,55 @@
                     株式会社エクサは、富士フイルム株式会社がメディカルシステム事業において抱えるPSI管理（需給管理）の課題に対し、サプライチェーン計画ソリューション「Maestro（旧Rapid Response）」を提供いたしました。これにより、サプライチェーン全体の最適化を通じて長期滞留在庫の半減を達成したほか、需給調整業務における所定外労働時間を3割削減し、同社のヘルスケア事業の成長に大きく貢献いたしました。
                 </p>
 
-                <section id="background" class="pt-12">
-                    <h2>富士フイルムが直面したグローバルサプライチェーンの課題</h2>
-                    <p>
-                        中期経営計画のもとヘルスケア事業の成長を推進する富士フイルムでは、ビジネスの急速な拡大に伴い、グローバルでのPSI管理（Production：生産、Sales：販売計画、Inventory：在庫）が複雑化していました。既存の需給システムと人手を介したExcelでのデータ管理では、ワールドワイドの需給状況をタイムリーに把握することが困難となり、連結在庫の増加という課題に直面していました。
+                <div class="my-12 py-8 border-y-2 border-blue-100 text-center">
+                    <p class="text-xl md:text-2xl font-bold text-blue-800 leading-relaxed">
+                        成長の足かせだった「在庫」を、未来への「推進力」へ。<br class="hidden md:block">
+                        富士フイルムのサプライチェーン改革、その成功の裏側とは。
                     </p>
-                </section>
+                </div>
 
-                <section id="solution" class="pt-12">
-                    <h2>技術力と「成果が出るまで伴走する」パートナーシップ</h2>
-                    <p>
-                        富士フイルムは複数のベンダーを比較検討した結果、エクサをパートナーとして選定しました。その決め手となったのは、医療業界における豊富な導入実績に加え、エクサが持つ以下の総合力です。一つは、製造業のサプライチェーンに関する深い業務知識と、製品の標準機能を最大限に活用して迅速かつ高品質な導入を実現する技術力。そしてもう一つは、単なるシステム開発に留まらず、導入後の運用・保守まで一貫して伴走し、現場に寄り添いながら「成果が出るまで支援する」というパートナーとしての姿勢が高く評価されました。
-                    </p>
-                </section>
-
-                <section id="results" class="pt-12">
-                    <h2>サプライチェーン全体の最適化と大幅な生産性向上を達成</h2>
-                    <p>
-                        エクサが提供した「Maestro」による新たなPSI管理システムは、サプライチェーン全体の最適化を実現し、**長期滞留在庫を2019年以前と比較して半減させることに成功**しました。また、需給調整業務の効率化によって**所定外労働時間を3割削減**するなど、大幅な生産性向上にも貢献しています。
-                    </p>
-                    <ul class="list-disc list-inside space-y-2 mb-6 bg-gray-50 p-6 rounded-md">
-                        <li>販社・本社・製造部門の需給計画データを一元管理し、Excel業務を大幅に削減。</li>
-                        <li>データの日次連携により、タイムリーな需給状況の把握が可能に。</li>
-                        <li>業務効率化で生まれた工数を、販売計画の精度向上や複数シミュレーションに活用。</li>
-                        <li>事業部内の業務を最大限に標準化し、担当外製品の状況確認も可能に。</li>
-                    </ul>
-                     <p>
-                        今後は、サービスパーツ管理や、試薬などより緻密な管理が求められるIVD（体外診断）事業での活用も期待されています。
-                    </p>
-                </section>
-
-                <section class="pt-16">
-                    <h2>会社概要</h2>
-                    <div class="bg-gray-50 p-6 rounded-lg border">
-                        <h3 class="border-l-0 pl-0">富士フイルム株式会社</h3>
-                        <p class="mb-2">
-                            「ヘルスケア」「マテリアルズ」「イメージング」の3つの領域で事業を展開。ヘルスケア領域では、最先端の技術を核とした幅広い製品ラインアップで、人々の健康維持増進に貢献しています。
+                <div>
+                    <section id="background">
+                        <h3>富士フイルムが直面したグローバルサプライチェーンの課題</h3>
+                        <p>
+                            中期経営計画のもとヘルスケア事業の成長を推進する富士フイルムでは、ビジネスの急速な拡大に伴い、グローバルでのPSI管理（Production：生産、Sales：販売計画、Inventory：在庫）が複雑化していました。既存の需給システムと人手を介したExcelでのデータ管理では、ワールドワイドの需給状況をタイムリーに把握することが困難となり、連結在庫の増加という課題に直面していました。
                         </p>
-                        <a href="https://www.fujifilm.com/jp/ja" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://www.fujifilm.com/jp/ja</a>
-                    </div>
-                </section>
+                    </section>
+
+                    <section id="solution">
+                        <h3>技術力と「成果が出るまで伴走する」パートナーシップ</h3>
+                        <p>
+                            富士フイルムは複数のベンダーを比較検討した結果、エクサをパートナーとして選定しました。その決め手となったのは、医療業界における豊富な導入実績に加え、エクサが持つ以下の総合力です。一つは、製造業のサプライチェーンに関する深い業務知識と、製品の標準機能を最大限に活用して迅速かつ高品質な導入を実現する技術力。そしてもう一つは、単なるシステム開発に留まらず、導入後の運用・保守まで一貫して伴走し、現場に寄り添いながら「成果が出るまで支援する」というパートナーとしての姿勢が高く評価されました。
+                        </p>
+                    </section>
+
+                    <section id="results">
+                        <h3>サプライチェーン全体の最適化と大幅な生産性向上を達成</h3>
+                        <p>
+                            エクサが提供した「Maestro」による新たなPSI管理システムは、サプライチェーン全体の最適化を実現し、**長期滞留在庫を2019年以前と比較して半減させることに成功**しました。また、需給調整業務の効率化によって**所定外労働時間を3割削減**するなど、大幅な生産性向上にも貢献しています。
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 mb-6 bg-gray-50 p-6 rounded-md">
+                            <li>販社・本社・製造部門の需給計画データを一元管理し、Excel業務を大幅に削減。</li>
+                            <li>データの日次連携により、タイムリーな需給状況の把握が可能に。</li>
+                            <li>業務効率化で生まれた工数を、販売計画の精度向上や複数シミュレーションに活用。</li>
+                            <li>事業部内の業務を最大限に標準化し、担当外製品の状況確認も可能に。</li>
+                        </ul>
+                         <p>
+                            今後は、サービスパーツ管理や、試薬などより緻密な管理が求められるIVD（体外診断）事業での活用も期待されています。
+                        </p>
+                    </section>
+
+                    <section id="company-info">
+                        <h3>会社概要</h3>
+                        <div class="bg-gray-50 p-6 rounded-lg border">
+                            <h4 class="border-l-0 pl-0 font-bold text-gray-800">富士フイルム株式会社</h4>
+                            <p class="mb-2">
+                                「ヘルスケア」「マテリアルズ」「イメージング」の3つの領域で事業を展開。ヘルスケア領域では、最先端の技術を核とした幅広い製品ラインアップで、人々の健康維持増進に貢献しています。
+                            </p>
+                            <a href="https://www.fujifilm.com/jp/ja" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://www.fujifilm.com/jp/ja</a>
+                        </div>
+                    </section>
+                </div>
             </article>
         </div>
     </main>
